@@ -1,0 +1,25 @@
+public static void plusMinus(List<Integer> arr) {
+    // Write your code here
+    int poslength=0,neglength=0,zerolength=0;
+    for(int i=0;i<arr.size();i++)
+    {
+        if(arr.get(i)>0)
+        {
+            poslength++;
+        }
+        else if(arr.get(i)<0)
+        {
+            neglength++;
+        }
+        else{
+            zerolength++;
+        }
+    }
+     float size=arr.size();
+     System.out.println(poslength/size);
+     System.out.println(neglength/size);
+     System.out.println(zerolength/size);
+
+    }
+
+}
