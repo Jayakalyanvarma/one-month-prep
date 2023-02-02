@@ -1,0 +1,22 @@
+public static int lonelyinteger(List<Integer> a) {
+    // Write your code here
+     Set<Integer> set=new HashSet<>();
+     int result=0;
+     for(Integer i:a)
+     {
+         if(!set.contains(i))
+         {
+             set.add(i);
+         }
+         else{
+             set.remove(i);
+         }
+     }
+     for(Integer s:set)
+     {
+         result=s;
+     }
+     return result;
+ }
+
+}
